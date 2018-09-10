@@ -1,4 +1,6 @@
-package kaito;
+package kaito.done;
+
+import kaito.common.TreeNode;
 
 /**
  * The root is the maximum number in the array.
@@ -59,10 +61,5 @@ public class MaxBinaryTree {
         return root;
     }
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
+
 }

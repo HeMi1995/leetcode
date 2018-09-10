@@ -1,17 +1,12 @@
-package kaito;
+package kaito.todo;
+
+import kaito.common.TreeNode;
 
 /**
  * @author kaito
  * @date 2018/9/9 3:02 AM
  */
 public class MergeTrees {
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         if (t1== null){
             return t2;

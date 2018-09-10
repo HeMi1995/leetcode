@@ -1,4 +1,4 @@
-package kaito;
+package kaito.done;
 
 /**
  * 思路：

@@ -1,4 +1,6 @@
-package kaito;
+package kaito.todo;
+
+import kaito.common.TreeNode;
 
 /**
  * 思路：
@@ -10,7 +12,7 @@ package kaito;
 public class MaxDepth {
 
     int maxDepth = 1;
-    public int maxDepth(MergeTrees.TreeNode root) {
+    public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -19,7 +21,7 @@ public class MaxDepth {
         return maxDepth;
     }
 
-    public void circle(MergeTrees.TreeNode root) {
+    public void circle(TreeNode root) {
 
         circleLeft(root);
         circleRight(root);
@@ -29,7 +31,7 @@ public class MaxDepth {
     }
 
     int left = 0;
-    public void circleLeft(MergeTrees.TreeNode root) {
+    public void circleLeft(TreeNode root) {
         if (root.left == null) {
             return;
         }
@@ -37,7 +39,7 @@ public class MaxDepth {
         circleLeft(root.left);
     }
     int right = 0;
-    public void circleRight(MergeTrees.TreeNode root) {
+    public void circleRight(TreeNode root) {
         if (root.right == null) {
             return;
         }
